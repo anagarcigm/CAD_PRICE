@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>zgf_cad101</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZGF_CALCULAR_PVPTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZGF_CALCULAR_PVP</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZCAD_CALCULAR_PVP</FUNCNAME>
+     <SHORT_TEXT>Calcular precio</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>NUMERO_PIEZAS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PRODUCT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZE_CODPRODUCT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>PRECIO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZE_IMPORTETOT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>NUMERO_PIEZAS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Number of pieces</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PRODUCT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Producto</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PRECIO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Total</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
