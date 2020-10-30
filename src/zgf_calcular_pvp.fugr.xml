@@ -22,12 +22,23 @@
        <REFERENCE>X</REFERENCE>
        <TYP>ZE_CODPRODUCT</TYP>
       </RSIMP>
+      <RSIMP>
+       <PARAMETER>SAVE_STOCK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
      </IMPORT>
      <EXPORT>
       <RSEXP>
        <PARAMETER>PRECIO</PARAMETER>
        <REFERENCE>X</REFERENCE>
        <TYP>ZE_IMPORTETOT</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>CONTROL_STOCK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SY-SUBRC</TYP>
       </RSEXP>
      </EXPORT>
      <DOCUMENTATION>
@@ -42,9 +53,19 @@
        <STEXT>Producto</STEXT>
       </RSFDO>
       <RSFDO>
+       <PARAMETER>SAVE_STOCK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
        <PARAMETER>PRECIO</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Total</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CONTROL_STOCK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Return Code of ABAP Statements</STEXT>
       </RSFDO>
      </DOCUMENTATION>
     </item>
